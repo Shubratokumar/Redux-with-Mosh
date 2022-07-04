@@ -1,11 +1,15 @@
 import configureStore from './store/configureStore';
 import * as actions from "./store/bugs";
+import { projectsAdded } from './store/projects';
 
 const store = configureStore();
 
 const unsubscribe = store.subscribe(()=>{
     console.log("Store changed!", store.getState());
 })
+
+// add projects
+store.dispatch(projectsAdded({name : "Project 1"}));
 
 // add bug
 store.dispatch(actions.bugAdded({ description: "Bug 1"}));

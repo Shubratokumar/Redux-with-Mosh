@@ -1,4 +1,4 @@
-import { createSlice} from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 // Action types
 /* const BUG_ADDED = "bugAdded";
 const BUG_REMOVED = "bugRemoved";
